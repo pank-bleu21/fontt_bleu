@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bleu - Company</title>
+    
+    <link rel="icon" href="Icon-Bleu.png" type="image/png">
+
     <style>
-        /* Importação da fonte vinda do seu GitHub */
         @font-face {
             font-family: 'MinhaFonteCanva';
             src: url('https://cdn.jsdelivr.net/gh/pank-bleu21/fontt_bleu@main/Font_bleu-Regular.ttf') format('truetype');
@@ -14,7 +16,6 @@
             font-display: swap;
         }
 
-        /* Estética Tranquila */
         * {
             margin: 0;
             padding: 0;
@@ -22,9 +23,7 @@
         }
 
         body {
-            /* Fundo em tom de areia/off-white para não cansar os olhos */
             background-color: #f9f7f2; 
-            /* Cor do texto em um cinza azulado suave */
             color: #4a5568; 
             font-family: 'Segoe UI', sans-serif;
             height: 100vh;
@@ -40,17 +39,23 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center; /* Garante que a logo e textos alinhem no centro */
             padding: 20px;
-            /* Transição suave ao carregar */
             animation: softAppear 2.5s ease-out;
+        }
+
+        /* ESTILO DA LOGO NA PÁGINA */
+        .logo-site {
+            width: 120px; /* Ajuste o tamanho conforme desejar */
+            height: auto;
+            margin-bottom: 20px;
         }
 
         h1 {
             font-family: 'MinhaFonteCanva', sans-serif;
             font-size: clamp(2.5rem, 8vw, 5rem);
             font-weight: normal;
-            margin-bottom: 20px;
-            /* Um leve espaçamento entre letras para um ar mais sofisticado */
+            margin-bottom: 10px;
             letter-spacing: -1px; 
         }
 
@@ -60,7 +65,7 @@
             letter-spacing: 5px;
             text-transform: uppercase;
             font-weight: 300;
-            color: #8a94a6; /* Tom mais claro para o subtítulo */
+            color: #8a94a6;
         }
 
         footer {
@@ -70,7 +75,6 @@
             letter-spacing: 1px;
         }
 
-        /* Animação sutil de opacidade */
         @keyframes softAppear {
             from { opacity: 0; }
             to { opacity: 1; }
@@ -80,6 +84,8 @@
 <body>
 
     <main>
+        <img src="img/Icon-Bleu.png" alt="Logo Bleu Company" class="logo-site">
+        
         <h1>Bleu - Company</h1>
         <h2>Em breve</h2>
     </main>
