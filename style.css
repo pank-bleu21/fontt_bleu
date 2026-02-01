@@ -43,7 +43,7 @@ main {
 }
 
 .logo-site {
-    width: clamp(400px, 15vw, 140px);
+    width: clamp(500px, 15vw, 140px);
     height: auto;
     margin-bottom: 2rem;
     transition: transform 0.3s ease, filter 0.3s ease;
@@ -95,3 +95,4 @@ footer {
     footer { padding: 20px; }
 
 }
+
