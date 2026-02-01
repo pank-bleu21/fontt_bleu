@@ -1,0 +1,96 @@
+/* Variáveis e Fontes */
+:root {
+    --primary-blue: hsl(218, 80%, 45%);
+    --text-secondary: #8a94a6;
+    --bg-dark: #000000;
+    --font-main: 'MinhaFonteCanva', 'Segoe UI', sans-serif;
+}
+
+@font-face {
+    font-family: 'MinhaFonteCanva';
+    src: url('https://cdn.jsdelivr.net/gh/pank-bleu21/fontt_bleu@main/Font_bleu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Reset e Body */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle at center, #050505 0%, #000000 100%);
+    color: var(--primary-blue);
+    font-family: 'Segoe UI', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Conteúdo Principal */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    animation: softAppear 2s ease-out forwards;
+}
+
+.logo-site {
+    width: clamp(100px, 15vw, 140px);
+    height: auto;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: drop-shadow(0 0 10px rgba(20, 73, 209, 0.2));
+}
+
+h1 {
+    font-family: var(--font-main);
+    font-size: clamp(2.5rem, 10vw, 5.5rem);
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+    letter-spacing: -2px;
+}
+
+h2 {
+    font-family: var(--font-main);
+    font-size: clamp(0.9rem, 3vw, 1.2rem);
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: var(--text-secondary);
+    opacity: 0.8;
+}
+
+/* Rodapé */
+footer {
+    padding: 40px;
+    font-size: 0.75rem;
+    color: #4a5568;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+/* Animações */
+@keyframes softAppear {
+    from { 
+        opacity: 0; 
+        transform: translateY(10px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+/* Responsividade Mobile */
+@media (max-width: 480px) {
+    h2 { letter-spacing: 4px; }
+    footer { padding: 20px; }
+}
